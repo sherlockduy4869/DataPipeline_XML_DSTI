@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?> <?xml-stylesheet type="text/xsl" href="./scenarios/scenario_1.xsl"?>
+<CLUB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="sport_club.xsd">
+    <!-- TEAMS: club teams, each linked to a coach (REF idCoach) and holding a roster of members -->
+    <TEAMS>
+        <!-- TEAM: a single team with its ID, assigned coach reference, name, and members list -->
+        <TEAM>
+            <ID>1</ID>
+            <REF idCoach="1" />
+            <NAME>Team A</NAME>
+            <!-- MEMBERS: collection of players belonging to this team -->
+            <MEMBERS>
+                <!-- MEMBER: an individual player with personal details and membership tier -->
+                <MEMBER>
+                    <ID>1</ID>
+                    <NAME>Duy</NAME>
+                    <AGE>18</AGE>
+                    <EMAIL>duy1@gmail.com</EMAIL>
+                    <MEMBERSHIPS>GOLD</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>2</ID>
+                    <NAME>Linh</NAME>
+                    <AGE>19</AGE>
+                    <EMAIL>linh1@gmail.com</EMAIL>
+                    <MEMBERSHIPS>SILVER</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>3</ID>
+                    <NAME>Quan</NAME>
+                    <AGE>20</AGE>
+                    <EMAIL>quan1@gmail.com</EMAIL>
+                    <MEMBERSHIPS>BRONZE</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>4</ID>
+                    <NAME>Nam</NAME>
+                    <AGE>21</AGE>
+                    <EMAIL>nam1@gmail.com</EMAIL>
+                    <MEMBERSHIPS>GOLD</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>5</ID>
+                    <NAME>Huy</NAME>
+                    <AGE>22</AGE>
+                    <EMAIL>huy1@gmail.com</EMAIL>
+                    <MEMBERSHIPS>SILVER</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>6</ID>
+                    <NAME>An</NAME>
+                    <AGE>20</AGE>
+                    <EMAIL>an1@gmail.com</EMAIL>
+                    <MEMBERSHIPS>BRONZE</MEMBERSHIPS>
+                </MEMBER>
+            </MEMBERS>
+        </TEAM>
+        <TEAM>
+            <ID>2</ID>
+            <REF idCoach="2" />
+            <NAME>Team B</NAME>
+            <MEMBERS>
+                <MEMBER>
+                    <ID>7</ID>
+                    <NAME>Minh</NAME>
+                    <AGE>18</AGE>
+                    <EMAIL>minh2@gmail.com</EMAIL>
+                    <MEMBERSHIPS>GOLD</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>8</ID>
+                    <NAME>Long</NAME>
+                    <AGE>19</AGE>
+                    <EMAIL>long2@gmail.com</EMAIL>
+                    <MEMBERSHIPS>SILVER</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>9</ID>
+                    <NAME>Khanh</NAME>
+                    <AGE>20</AGE>
+                    <EMAIL>khanh2@gmail.com</EMAIL>
+                    <MEMBERSHIPS>BRONZE</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>10</ID>
+                    <NAME>Tuan</NAME>
+                    <AGE>21</AGE>
+                    <EMAIL>tuan2@gmail.com</EMAIL>
+                    <MEMBERSHIPS>GOLD</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>11</ID>
+                    <NAME>Phong</NAME>
+                    <AGE>22</AGE>
+                    <EMAIL>phong2@gmail.com</EMAIL>
+                    <MEMBERSHIPS>SILVER</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>12</ID>
+                    <NAME>Dat</NAME>
+                    <AGE>23</AGE>
+                    <EMAIL>dat2@gmail.com</EMAIL>
+                    <MEMBERSHIPS>BRONZE</MEMBERSHIPS>
+                </MEMBER>
+            </MEMBERS>
+        </TEAM>
+        <TEAM>
+            <ID>3</ID>
+            <REF idCoach="3" />
+            <NAME>Team C</NAME>
+            <MEMBERS>
+                <MEMBER>
+                    <ID>13</ID>
+                    <NAME>Hoa</NAME>
+                    <AGE>18</AGE>
+                    <EMAIL>hoa3@gmail.com</EMAIL>
+                    <MEMBERSHIPS>GOLD</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>14</ID>
+                    <NAME>Lan</NAME>
+                    <AGE>19</AGE>
+                    <EMAIL>lan3@gmail.com</EMAIL>
+                    <MEMBERSHIPS>SILVER</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>15</ID>
+                    <NAME>Mai</NAME>
+                    <AGE>20</AGE>
+                    <EMAIL>mai3@gmail.com</EMAIL>
+                    <MEMBERSHIPS>BRONZE</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>16</ID>
+                    <NAME>Trang</NAME>
+                    <AGE>21</AGE>
+                    <EMAIL>trang3@gmail.com</EMAIL>
+                    <MEMBERSHIPS>GOLD</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>17</ID>
+                    <NAME>Ngoc</NAME>
+                    <AGE>22</AGE>
+                    <EMAIL>ngoc3@gmail.com</EMAIL>
+                    <MEMBERSHIPS>SILVER</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>18</ID>
+                    <NAME>Vy</NAME>
+                    <AGE>20</AGE>
+                    <EMAIL>vy3@gmail.com</EMAIL>
+                    <MEMBERSHIPS>BRONZE</MEMBERSHIPS>
+                </MEMBER>
+            </MEMBERS>
+        </TEAM>
+        <TEAM>
+            <ID>4</ID>
+            <REF idCoach="4" />
+            <NAME>Team D</NAME>
+            <MEMBERS>
+                <MEMBER>
+                    <ID>19</ID>
+                    <NAME>Son</NAME>
+                    <AGE>21</AGE>
+                    <EMAIL>son4@gmail.com</EMAIL>
+                    <MEMBERSHIPS>GOLD</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>20</ID>
+                    <NAME>Hai</NAME>
+                    <AGE>22</AGE>
+                    <EMAIL>hai4@gmail.com</EMAIL>
+                    <MEMBERSHIPS>SILVER</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>21</ID>
+                    <NAME>Binh</NAME>
+                    <AGE>23</AGE>
+                    <EMAIL>binh4@gmail.com</EMAIL>
+                    <MEMBERSHIPS>BRONZE</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>22</ID>
+                    <NAME>Hung</NAME>
+                    <AGE>20</AGE>
+                    <EMAIL>hung4@gmail.com</EMAIL>
+                    <MEMBERSHIPS>GOLD</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>23</ID>
+                    <NAME>Duc</NAME>
+                    <AGE>21</AGE>
+                    <EMAIL>duc4@gmail.com</EMAIL>
+                    <MEMBERSHIPS>SILVER</MEMBERSHIPS>
+                </MEMBER>
+                <MEMBER>
+                    <ID>24</ID>
+                    <NAME>Toan</NAME>
+                    <AGE>22</AGE>
+                    <EMAIL>toan4@gmail.com</EMAIL>
+                    <MEMBERSHIPS>BRONZE</MEMBERSHIPS>
+                </MEMBER>
+            </MEMBERS>
+        </TEAM>
+    </TEAMS>
+    <!-- COACHES: list of all coaches available at the club, referenced by teams via idCoach -->
+    <COACHES>
+        <!-- COACH: a coach with a unique ID, name, and sport specialty -->
+        <COACH>
+            <ID>1</ID>
+            <NAME>Vu Anh</NAME>
+            <SPECIALTY>Football</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>2</ID>
+            <NAME>Anh Vu</NAME>
+            <SPECIALTY>Basketball</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>3</ID>
+            <NAME>Nguyen Hai</NAME>
+            <SPECIALTY>Volleyball</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>4</ID>
+            <NAME>Tran Minh</NAME>
+            <SPECIALTY>Tennis</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>5</ID>
+            <NAME>Le Hoang</NAME>
+            <SPECIALTY>Swimming</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>6</ID>
+            <NAME>Pham Long</NAME>
+            <SPECIALTY>Running</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>7</ID>
+            <NAME>Doan Kiet</NAME>
+            <SPECIALTY>Gym</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>8</ID>
+            <NAME>Hoang Nam</NAME>
+            <SPECIALTY>Boxing</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>9</ID>
+            <NAME>Vu Linh</NAME>
+            <SPECIALTY>Yoga</SPECIALTY>
+        </COACH>
+        <COACH>
+            <ID>10</ID>
+            <NAME>Dang Phuc</NAME>
+            <SPECIALTY>Badminton</SPECIALTY>
+        </COACH>
+    </COACHES>
+    <!-- TRAININGSESSIONS: scheduled practice sessions linking a team to a facility at a given time -->
+    <TRAININGSESSIONS>
+
+        <!-- TRAININGSESSION: one practice session with team, facility, equipment used, and start time -->
+        <TRAININGSESSION>
+            <ID>1</ID>
+            <TEAMID>1</TEAMID>
+            <FACILITYID>1</FACILITYID>
+            <!-- EQUIPMENTS: gear required for this session -->
+            <EQUIPMENTS>
+                <EQUIPMENT>Football</EQUIPMENT>
+                <EQUIPMENT>Goal Net</EQUIPMENT>
+            </EQUIPMENTS>
+            <TIME>2026-03-25T08:00:00</TIME>
+        </TRAININGSESSION>
+
+        <TRAININGSESSION>
+            <ID>2</ID>
+            <TEAMID>2</TEAMID>
+            <FACILITYID>2</FACILITYID>
+            <EQUIPMENTS>
+                <EQUIPMENT>Dumbbells</EQUIPMENT>
+                <EQUIPMENT>Yoga Mat</EQUIPMENT>
+            </EQUIPMENTS>
+            <TIME>2026-03-26T10:00:00</TIME>
+        </TRAININGSESSION>
+
+        <TRAININGSESSION>
+            <ID>3</ID>
+            <TEAMID>3</TEAMID>
+            <FACILITYID>3</FACILITYID>
+            <EQUIPMENTS>
+                <EQUIPMENT>Swim Gear</EQUIPMENT>
+                <EQUIPMENT>Kickboard</EQUIPMENT>
+            </EQUIPMENTS>
+            <TIME>2026-03-27T07:00:00</TIME>
+        </TRAININGSESSION>
+
+        <TRAININGSESSION>
+            <ID>4</ID>
+            <TEAMID>4</TEAMID>
+            <FACILITYID>4</FACILITYID>
+            <EQUIPMENTS>
+                <EQUIPMENT>Basketball</EQUIPMENT>
+                <EQUIPMENT>Hoop</EQUIPMENT>
+            </EQUIPMENTS>
+            <TIME>2026-03-28T09:00:00</TIME>
+        </TRAININGSESSION>
+
+        <TRAININGSESSION>
+            <ID>5</ID>
+            <TEAMID>1</TEAMID>
+            <FACILITYID>5</FACILITYID>
+            <EQUIPMENTS>
+                <EQUIPMENT>Treadmill</EQUIPMENT>
+                <EQUIPMENT>Weights</EQUIPMENT>
+            </EQUIPMENTS>
+            <TIME>2026-03-29T18:00:00</TIME>
+        </TRAININGSESSION>
+
+        <TRAININGSESSION>
+            <ID>6</ID>
+            <TEAMID>2</TEAMID>
+            <FACILITYID>6</FACILITYID>
+            <EQUIPMENTS>
+                <EQUIPMENT>Badminton Racket</EQUIPMENT>
+                <EQUIPMENT>Shuttlecock</EQUIPMENT>
+            </EQUIPMENTS>
+            <TIME>2026-03-30T16:00:00</TIME>
+        </TRAININGSESSION>
+
+    </TRAININGSESSIONS>
+    <!-- FACILITIES: physical venues (stadiums, gyms, pools) used to host training sessions -->
+    <FACILITIES>
+        <!-- FACILITY: a venue with its ID, name, location, and maximum capacity -->
+        <FACILITY>
+            <ID>1</ID>
+            <NAME>Stadium A</NAME>
+            <LOCATION>Hanoi</LOCATION>
+            <CAPACITY>500</CAPACITY>
+        </FACILITY>
+
+        <FACILITY>
+            <ID>2</ID>
+            <NAME>Gym B</NAME>
+            <LOCATION>Ho Chi Minh City</LOCATION>
+            <CAPACITY>200</CAPACITY>
+        </FACILITY>
+
+        <FACILITY>
+            <ID>3</ID>
+            <NAME>Pool C</NAME>
+            <LOCATION>Da Nang</LOCATION>
+            <CAPACITY>150</CAPACITY>
+        </FACILITY>
+
+        <FACILITY>
+            <ID>4</ID>
+            <NAME>Arena D</NAME>
+            <LOCATION>Hai Phong</LOCATION>
+            <CAPACITY>400</CAPACITY>
+        </FACILITY>
+
+        <FACILITY>
+            <ID>5</ID>
+            <NAME>Fitness Center E</NAME>
+            <LOCATION>Can Tho</LOCATION>
+            <CAPACITY>180</CAPACITY>
+        </FACILITY>
+
+        <FACILITY>
+            <ID>6</ID>
+            <NAME>Sports Hall F</NAME>
+            <LOCATION>Nha Trang</LOCATION>
+            <CAPACITY>300</CAPACITY>
+        </FACILITY>
+
+    </FACILITIES>
+    <!-- COMPETITIONS: tournaments and matches the club's teams participate in -->
+    <COMPETITIONS>
+        <!-- COMPETITION: a single event with name, date, and the participating team -->
+        <COMPETITION>
+            <ID>1</ID>
+            <NAME>Summer Cup</NAME>
+            <DATE>2026-06-01</DATE>
+            <TEAMID>1</TEAMID>
+        </COMPETITION>
+
+        <COMPETITION>
+            <ID>2</ID>
+            <NAME>Autumn League</NAME>
+            <DATE>2026-09-15</DATE>
+            <TEAMID>2</TEAMID>
+        </COMPETITION>
+
+        <COMPETITION>
+            <ID>3</ID>
+            <NAME>Winter Cup</NAME>
+            <DATE>2026-12-01</DATE>
+            <TEAMID>3</TEAMID>
+        </COMPETITION>
+
+        <COMPETITION>
+            <ID>4</ID>
+            <NAME>Spring Tournament</NAME>
+            <DATE>2026-04-10</DATE>
+            <TEAMID>4</TEAMID>
+        </COMPETITION>
+
+        <COMPETITION>
+            <ID>5</ID>
+            <NAME>National Championship</NAME>
+            <DATE>2026-08-20</DATE>
+            <TEAMID>1</TEAMID>
+        </COMPETITION>
+    </COMPETITIONS>
+    <!-- BOOKINGS: reservations made for training sessions, recording when a slot was booked -->
+    <BOOKINGS>
+        <!-- BOOKING: a single reservation linked to a training session via TRAININGSESSIONID -->
+        <BOOKING>
+            <ID>1</ID>
+            <TRAININGSESSIONID>1</TRAININGSESSIONID>
+            <TIME>2026-03-25T07:30:00</TIME>
+        </BOOKING>
+
+        <BOOKING>
+            <ID>2</ID>
+            <TRAININGSESSIONID>2</TRAININGSESSIONID>
+            <TIME>2026-03-26T09:30:00</TIME>
+        </BOOKING>
+
+        <BOOKING>
+            <ID>3</ID>
+            <TRAININGSESSIONID>3</TRAININGSESSIONID>
+            <TIME>2026-03-27T06:30:00</TIME>
+        </BOOKING>
+
+        <BOOKING>
+            <ID>4</ID>
+            <TRAININGSESSIONID>4</TRAININGSESSIONID>
+            <TIME>2026-03-28T08:30:00</TIME>
+        </BOOKING>
+        
+        <BOOKING>
+            <ID>5</ID>
+            <TRAININGSESSIONID>5</TRAININGSESSIONID>
+            <TIME>2026-03-29T17:30:00</TIME>
+        </BOOKING>
+        
+        <BOOKING>
+            <ID>6</ID>
+            <TRAININGSESSIONID>6</TRAININGSESSIONID>
+            <TIME>2026-03-30T15:30:00</TIME>
+        </BOOKING>
+    </BOOKINGS>
+</CLUB>
