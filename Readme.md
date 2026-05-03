@@ -169,7 +169,7 @@ Output: `results/scenario_8.html` (XML payload)
 
 ### Scenario 9: Team summaries with computed data (JSON)
 
-Emits a JSON `teamsSummary` array with `teamId`, `teamName`, `coachId`, and the computed `totalMembers`.
+Emits a JSON `teamsSummary` array with `teamId`, `teamName`, and the computed `totalMembers`.
 
 ```shell
 python Final.py
@@ -209,7 +209,7 @@ pip install lxml
 `Final.py` defines a `BASE_DIR` constant at the top of the file. Update it to match your local project path before running:
 
 ```python
-BASE_DIR = r"/absolute/path/to/XML"
+BASE_DIR = r"/absolute/path/to/DATA_PIPELINE_FINAL_PROJECT"
 ```
 
 ### Running the Python Pipeline
