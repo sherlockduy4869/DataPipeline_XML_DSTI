@@ -143,27 +143,27 @@ Output: `results/scenario_6.html`
 
 ### Scenario 7: Simplified public directory (XML)
 
-Restructures teams and members into a flatter `publicDirectory` XML format suitable for external consumption.
+Extracts all teams with their complete member rosters into a simplified `publicDirectory` XML format suitable for external consumption.
 
 ```shell
 python Final.py
 # Enter scenario number (1–10): 7
 ```
 
-Output: `results/scenario_7.html` (XML payload)
+Output: `results/scenario_7.xml`
 
 ---
 
-### Scenario 8: Teams hierarchy (XML)
+### Scenario 8: Data restructuring with selective filtering (XML)
 
-Reorganizes the database around teams, embedding their roster (members) and coach reference into a `teamsHierarchy` document.
+Restructures team data with selective filtering (only GOLD members) and hierarchical organization, embedding the filtered roster and coach reference into a `teamsHierarchy` document.
 
 ```shell
 python Final.py
 # Enter scenario number (1–10): 8
 ```
 
-Output: `results/scenario_8.html` (XML payload)
+Output: `results/scenario_8.xml`
 
 ---
 

@@ -12,8 +12,8 @@
 
 # Imagine 2 additional scenarios requiring the exploitation of part of the XML database in another XML format and write an XSL stylesheet for this.
 
-### 7 Goal: Simplified Public Directory
-### 8 Goal: Data Restructuring
+### 7 Goal: Simplified Public Directory - Extract all teams with their complete member rosters in a simplified XML format
+### 8 Goal: Data Restructuring - Restructure team data with selective filtering (only GOLD members) and hierarchical organization
 
 # Imagine 2 additional scenarios requiring the exploitation of part of the XML database in JSON format and write an XSL stylesheet for this.
 
